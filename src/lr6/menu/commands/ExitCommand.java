@@ -14,4 +14,3 @@ public class ExitCommand implements Command {
         return " - command to close program";
     }
 }
-
