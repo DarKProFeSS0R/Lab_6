@@ -13,10 +13,11 @@ public class HelpCommand implements Command {
         return "help";
     }
 
-    public String getCommandDescription() {
-        return "Display a list of commands and their descriptions.";
-    }
     public void execute(String params) {
         executor.showHelp();
+    }
+    @Override
+    public String getCommandDesc() {
+        return " - command to display list of commands";
     }
 }

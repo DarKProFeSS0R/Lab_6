@@ -49,4 +49,9 @@ public class SearchCreditsCommand implements Command {
         }
     }
 
+    @Override
+    public String getCommandDesc() {
+        return " - command to search suitable credits in CreditList";
+    }
+
 }

@@ -23,4 +23,8 @@ public class DeleteCreditCommand implements Command {
     public String getCommandName() {
         return "delete";
     }
+    @Override
+    public String getCommandDesc() {
+        return " - command to delete credits from CreditList";
+    }
 }

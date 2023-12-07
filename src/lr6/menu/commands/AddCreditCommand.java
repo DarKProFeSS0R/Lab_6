@@ -14,6 +14,8 @@ public class AddCreditCommand implements Command {
         return "add";
     }
 
+
+
     @Override
     public void execute(String params) {
         try {
@@ -47,6 +49,11 @@ public class AddCreditCommand implements Command {
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }
+    }
+
+    @Override
+    public String getCommandDesc() {
+        return " - command to add credits in CreditList";
     }
 
 }

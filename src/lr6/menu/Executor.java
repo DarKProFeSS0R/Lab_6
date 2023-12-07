@@ -34,7 +34,7 @@ public class Executor {
     public void showHelp() {
         System.out.println("List of commands:");
         for (Command command : commands) {
-            System.out.println(command.getCommandName());
+            System.out.println(command.getCommandName()+command.getCommandDesc());
         }
     }
 }

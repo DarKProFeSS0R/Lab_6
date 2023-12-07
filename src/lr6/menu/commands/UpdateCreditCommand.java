@@ -27,7 +27,6 @@ public class UpdateCreditCommand implements Command {
             String earlyRepaymentStr = tokens[5];
             String creditLineIncreaseStr = tokens[6];
 
-            // Additional validation for earlyRepaymentStr and creditLineIncreaseStr
             if (!earlyRepaymentStr.equalsIgnoreCase("y") && !earlyRepaymentStr.equalsIgnoreCase("n")) {
                 throw new IllegalArgumentException("Invalid value for earlyRepayment. Please provide 'y' or 'n'.");
             }
@@ -50,4 +49,8 @@ public class UpdateCreditCommand implements Command {
     public String getCommandName() {
         return "update";
     }
+    public String getCommandDesc() {
+        return " - command to update credits in CreditList";
+    }
+
 }

@@ -9,5 +9,9 @@ public class ExitCommand implements Command {
         System.out.println("Closing...");
         System.exit(0);
     }
+    @Override
+    public String getCommandDesc() {
+        return " - command to close program";
+    }
 }
 

@@ -36,4 +36,8 @@ public class ShowCreditCommand implements Command {
     public String getCommandName() {
         return "show";
     }
+    @Override
+    public String getCommandDesc() {
+        return " - command to show credits from CreditList";
+    }
 }
