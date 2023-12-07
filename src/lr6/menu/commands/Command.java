@@ -4,7 +4,5 @@ public interface Command {
     String getCommandName();
     void execute(String params);
 
-    default String getCommandDesc() {
-        return "";
-    }
+    String getCommandDesc();
 }
